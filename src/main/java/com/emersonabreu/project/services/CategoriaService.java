@@ -19,4 +19,9 @@ public class CategoriaService {
 		Optional<Categoria> obj = categoriaRepository.findById(id);
 		return obj;
 	}
+	
+	public Categoria inserir(Categoria categoria) {
+		Categoria obj = categoriaRepository.save(categoria);
+		return obj;
+	}
 }
