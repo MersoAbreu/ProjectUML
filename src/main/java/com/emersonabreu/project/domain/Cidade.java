@@ -3,6 +3,7 @@ package com.emersonabreu.project.domain;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -20,7 +21,7 @@ public class Cidade implements Serializable {
 	private int id;
 	private String nome;
 	@JsonManagedReference
-	@ManyToOne
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="ESTADO_ID")
 	private Estado estado;
 
