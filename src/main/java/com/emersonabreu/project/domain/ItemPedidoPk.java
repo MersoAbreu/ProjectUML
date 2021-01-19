@@ -5,6 +5,8 @@ import java.io.Serializable;
 import javax.persistence.Embeddable;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+
+
 @Embeddable
 public class ItemPedidoPk implements Serializable {
 
@@ -21,6 +23,11 @@ public class ItemPedidoPk implements Serializable {
 	@JoinColumn(name="produto_id")
 	private Produto produto;
 
+	
+	public ItemPedidoPk() {
+		super();
+	}
+	
 
 	public Pedido getPedido() {
 		return pedido;

@@ -76,7 +76,7 @@ public class ProjectApplication implements CommandLineRunner{
 		Endereco end1 = new Endereco( 3,"Rua Cecilio Vergas", "578", "Casa", "Centro", "19550-000", c1, cli1);
 		//Endereco end2 = new Endereco(3, "Mario Peixoto", "852", "Apto", "Vila Cesar", "85.968-963", c2, cli2);
 		
-		
+		/*
 		cli1.getEnderecos().addAll(Arrays.asList(end1));
 		cli2.getEnderecos().addAll(Arrays.asList(end1));
 		clienteRepository.saveAll(Arrays.asList(cli1));
@@ -99,7 +99,7 @@ public class ProjectApplication implements CommandLineRunner{
 		pedidoRepository.saveAll(Arrays.asList(ped1, ped2));
 		pagamentoRepository.saveAll(Arrays.asList(pag1));
 		
-		
+		*/
 		
 		
 	}
