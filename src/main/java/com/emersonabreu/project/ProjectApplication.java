@@ -12,6 +12,7 @@ import com.emersonabreu.project.domain.Cidade;
 import com.emersonabreu.project.domain.Cliente;
 import com.emersonabreu.project.domain.Endereco;
 import com.emersonabreu.project.domain.Estado;
+import com.emersonabreu.project.domain.ItemPedido;
 import com.emersonabreu.project.domain.Pagamento;
 import com.emersonabreu.project.domain.PagamentoComCartao;
 import com.emersonabreu.project.domain.Pedido;
@@ -97,6 +98,10 @@ public class ProjectApplication implements CommandLineRunner{
 		
 		pedidoRepository.saveAll(Arrays.asList(ped1, ped2));
 		pagamentoRepository.saveAll(Arrays.asList(pag1));
+		
+		
+		
+		
 	}
 
 }
